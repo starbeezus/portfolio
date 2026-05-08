@@ -24,7 +24,6 @@ export function Navigation() {
           id="nav"
         >
           <div className="flex flex-row space-x-0 pr-10">
-            {/* {Object.entries(navItems).map(([path, { name }]) => { */}
             {navItems.map(({ path, name }) => {
               return (
                 <Link
