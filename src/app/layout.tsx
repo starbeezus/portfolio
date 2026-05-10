@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import '@/resources/globals.css'
 import { Navigation } from '@/components/Navigation'
 import { Header } from '@/components/Header'
+import { Card } from '@/components/Card'
+import { SideRail } from '@/components/sideRail/SideRail'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,10 +31,17 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <Navigation />
-        <Header />
-        {children}
+      <body className="min-h-full flex flex-row gap-4">
+        <div className="basis-xs ml-24 max-w-xs ">
+          <SideRail />
+        </div>
+        <div className="basis-4xl max-w-4xl mr-24">
+          <Card>
+            <Navigation />
+            <Header />
+            {children}
+          </Card>
+        </div>
       </body>
     </html>
   )

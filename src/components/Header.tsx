@@ -18,5 +18,5 @@ export function Header() {
     default:
       name = ''
   }
-  return <h1 className="text-5xl font-black ml-8">{name}</h1>
+  return <h1 className="text-5xl font-black ml-8 mb-10">{name}</h1>
 }
