@@ -1,16 +1,16 @@
-import { Card } from '../Card'
+import { DashboardCard } from '../DashboardCard'
 import profilePic from '@/images/profilePic.jpeg'
 import { SideRailItems } from './SideRailItems'
 
 export function SideRail() {
   return (
-    <Card
+    <DashboardCard
       title="Brianne Douglas"
       description="Software Engineer"
       image={profilePic}
     >
-      <hr className="bg-gray-900/85 border-gray-900/15 h-1.5 m-2" />
+      {/* <hr className="bg-amber-300 border-amber-300 rounded h-1.5 ml-4 mr-4 mb-5" /> */}
       <SideRailItems />
-    </Card>
+    </DashboardCard>
   )
 }

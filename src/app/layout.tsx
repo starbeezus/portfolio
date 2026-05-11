@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import '@/resources/globals.css'
 import { Navigation } from '@/components/Navigation'
 import { Header } from '@/components/Header'
-import { Card } from '@/components/Card'
+import { DashboardCard } from '@/components/DashboardCard'
 import { SideRail } from '@/components/sideRail/SideRail'
 
 const geistSans = Geist({
@@ -31,16 +31,16 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-row gap-4">
-        <div className="basis-xs ml-24 max-w-xs ">
+      <body className="min-h-full flex flex-row gap-16">
+        <div className="basis-3xs ml-24 max-w-xs ">
           <SideRail />
         </div>
-        <div className="basis-4xl max-w-4xl mr-24">
-          <Card>
+        <div className="basis-3xl max-w-4xl mr-24">
+          <DashboardCard>
             <Navigation />
-            <Header />
+            <Header size="title" />
             {children}
-          </Card>
+          </DashboardCard>
         </div>
       </body>
     </html>

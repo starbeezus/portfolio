@@ -52,19 +52,19 @@ export function SideRailItems() {
       {sideRailItems.map((item) => {
         const Icon = item.icon
         return (
-          <div key={item.id} className=" m-4">
+          <div key={item.id} className="ml-4 mb-4">
             <div className="flex flex-row">
-              <Icon className="m-2 self-center rounded h-6 w-6" />
-              <div className="self-center">{item.name}</div>
+              <Icon className="ml-2 mr-2 self-center rounded h-6 w-6" />
+              <div className="self-center font-semibold">{item.name}</div>
             </div>
             {Array.isArray(item.info) ? (
               item.info.map((infoItem, i) => (
-                <div key={i} className="">
+                <div key={i} className="ml-4">
                   {infoItem}
                 </div>
               ))
             ) : (
-              <div>{item.info}</div>
+              <div className="ml-4">{item.info}</div>
             )}
           </div>
         )

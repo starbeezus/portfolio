@@ -1,15 +1,20 @@
 import Image, { StaticImageData } from 'next/image'
 
-interface CardProps {
+interface DashboardCardProps {
   title?: string
   description?: string
   image?: StaticImageData | string
   children?: React.ReactNode
 }
 
-export function Card({ title, description, image, children }: CardProps) {
+export function DashboardCard({
+  title,
+  description,
+  image,
+  children,
+}: DashboardCardProps) {
   return (
-    <div className="rounded  min-w-fit overflow-hidden shadow-lg bg-amber-500/15  hover:shadow-xl transition-shadow duration-300 m-4">
+    <div className="rounded min-w-fit overflow-hidden bg-amber-500/15 mt-24">
       {image && title && description && (
         <div>
           <Image
@@ -20,7 +25,7 @@ export function Card({ title, description, image, children }: CardProps) {
           />
           <div className="p-6">
             <h2 className="text-xl text-center font-semibold mb-2">{title}</h2>
-            <p className="text-gray-700 text-center text-base rounded bg-gray-400/15">
+            <p className="text-gray-700 text-center text-base rounded bg-gray-400/15 underline decoration-wavy decoration-4 underline-offset-30 decoration-amber-300 mb-6">
               {description}
             </p>
           </div>
