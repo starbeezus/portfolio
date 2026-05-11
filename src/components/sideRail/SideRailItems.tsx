@@ -16,9 +16,9 @@ interface sideRailItemsProps {
 const sideRailItems: sideRailItemsProps[] = [
   {
     id: 1,
-    name: 'Education',
-    info: ['Gustavus Adolphus College', 'B.A. Computer Science'],
-    icon: GraduationCap,
+    name: 'Experience',
+    info: '4+ Years',
+    icon: Briefcase,
   },
   {
     id: 2,
@@ -28,9 +28,9 @@ const sideRailItems: sideRailItemsProps[] = [
   },
   {
     id: 3,
-    name: 'Experience',
-    info: '4+ Years',
-    icon: Briefcase,
+    name: 'Education',
+    info: ['Gustavus Adolphus College', 'B.A. Computer Science'],
+    icon: GraduationCap,
   },
   {
     id: 4,
