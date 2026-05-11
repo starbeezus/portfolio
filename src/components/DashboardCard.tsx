@@ -14,7 +14,7 @@ export function DashboardCard({
   children,
 }: DashboardCardProps) {
   return (
-    <div className="rounded min-w-fit overflow-hidden bg-amber-500/15 mt-24">
+    <div className="rounded min-w-fit overflow-hidden bg-olive-200 mt-24">
       {image && title && description && (
         <div>
           <Image
@@ -24,8 +24,8 @@ export function DashboardCard({
             height={150}
           />
           <div className="p-6">
-            <h2 className="text-xl text-center font-semibold mb-2">{title}</h2>
-            <p className="text-gray-700 text-center text-base rounded bg-gray-400/15 underline decoration-wavy decoration-4 underline-offset-30 decoration-amber-300 mb-6">
+            <h2 className="text-xl text-center font-bold mb-2">{title}</h2>
+            <p className=" text-center text-base rounded bg-amber-300/50 underline decoration-wavy decoration-4 underline-offset-30 decoration-amber-300 mx-6 mb-6">
               {description}
             </p>
           </div>
