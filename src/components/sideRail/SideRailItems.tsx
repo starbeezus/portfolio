@@ -23,7 +23,7 @@ const sideRailItems: sideRailItemsProps[] = [
   {
     id: 2,
     name: 'Location',
-    info: ['Saint Paul, MN', 'Philadelphia, PA', 'West Orange, NJ'],
+    info: ['Philadelphia, PA', 'West Orange, NJ'],
     icon: MapPin,
   },
   {

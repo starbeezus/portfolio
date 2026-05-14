@@ -23,7 +23,7 @@ export default function TechStack() {
         return (
           <div
             key={i}
-            className="group flex flex-col items-center justify-center w-32 h-32 rounded-lg cursor-pointer transition-colors duration-300 hover:bg-amber-300/50"
+            className="group flex flex-col items-center justify-center w-32 h-16 rounded-lg cursor-pointer transition-colors duration-300 hover:bg-amber-300/50"
           >
             <Icon
               className="

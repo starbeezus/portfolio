@@ -31,7 +31,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-row gap-16">
+      <body className="min-h-full flex flex-row gap-16 ">
         <div className="basis-3xs ml-24 max-w-xs ">
           <SideRail />
         </div>
