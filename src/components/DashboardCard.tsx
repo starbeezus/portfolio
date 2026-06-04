@@ -1,37 +1,32 @@
 import Image, { StaticImageData } from 'next/image'
 
 interface DashboardCardProps {
-  title?: string
-  description?: string
-  image?: StaticImageData | string
-  children?: React.ReactNode
+	title?: string
+	description?: string
+	image?: StaticImageData | string
+	children?: React.ReactNode
 }
 
-export function DashboardCard({
-  title,
-  description,
-  image,
-  children,
-}: DashboardCardProps) {
-  return (
-    <div className="rounded-lg min-w-fit overflow-hidden bg-olive-200 mt-24">
-      {image && title && description && (
-        <div>
-          <Image
-            className="rounded-lg place-self-center aspect-square p-2 m-6 bg-amber-300/50"
-            src={image}
-            alt={title}
-            height={150}
-          />
-          <div className="p-6">
-            <h2 className="text-xl text-center font-bold mb-2">{title}</h2>
-            <p className=" text-center text-base rounded-lg bg-amber-300/50 underline decoration-wavy decoration-4 underline-offset-30 decoration-amber-300 mx-6 mb-6">
-              {description}
-            </p>
-          </div>
-        </div>
-      )}
-      {children}
-    </div>
-  )
+export function DashboardCard({ title, description, image, children }: DashboardCardProps) {
+	return (
+		<div className="mt-24 min-w-fit overflow-hidden rounded-lg bg-olive-200">
+			{image && title && description && (
+				<div>
+					<Image
+						className="m-6 aspect-square place-self-center rounded-lg bg-amber-300/50 p-2"
+						src={image}
+						alt={title}
+						height={150}
+					/>
+					<div className="p-6">
+						<h2 className="mb-2 text-center text-xl font-bold">{title}</h2>
+						<p className="mx-6 mb-6 rounded-lg bg-amber-300/50 text-center text-base underline decoration-amber-300 decoration-wavy decoration-4 underline-offset-30">
+							{description}
+						</p>
+					</div>
+				</div>
+			)}
+			{children}
+		</div>
+	)
 }
