@@ -24,7 +24,7 @@ export default function SideRailFooter() {
 					>
 						<Icon className="text-4xl text-amber-300/80 transition-opacity duration-300 group-hover:opacity-0" />
 						<div className="absolute text-lg font-semibold text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-							<Link key={path} href={path}>
+							<Link key={path} href={path} target="_blank">
 								{name}
 							</Link>
 						</div>
