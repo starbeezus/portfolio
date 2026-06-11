@@ -33,7 +33,7 @@ export default function RootLayout({
 		>
 			<body>
 				<div className="justify-self-center">
-					<div className="flex min-h-full flex-row gap-16">
+					<div className="flex min-h-full flex-row gap-16 pb-20">
 						<div className="max-w-xs basis-3xs">
 							<SideRail />
 						</div>

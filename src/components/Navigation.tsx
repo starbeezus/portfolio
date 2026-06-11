@@ -23,7 +23,7 @@ export function Navigation() {
 					className="relative flex scroll-pr-6 flex-row-reverse px-0 pb-0 md:overflow-auto"
 					id="nav"
 				>
-					<div className="flex flex-row space-x-0 rounded-lg bg-olive-300">
+					<div className="flex flex-row space-x-0 rounded-lg bg-amber-300/50">
 						{navItems.map(({ path, name }) => {
 							return (
 								<Link

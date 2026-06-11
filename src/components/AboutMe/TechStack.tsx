@@ -22,7 +22,7 @@ export default function TechStack() {
 						key={i}
 						className="group flex h-16 w-32 cursor-pointer flex-col items-center justify-center rounded-lg transition-colors duration-300 hover:bg-amber-300/50"
 					>
-						<Icon className="text-4xl text-amber-300/80 transition-opacity duration-300 group-hover:opacity-0" />
+						<Icon className="text-4xl text-amber-300 transition-opacity duration-300 group-hover:opacity-0" />
 						<div className="absolute text-lg font-semibold text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 							{title}
 						</div>
