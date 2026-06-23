@@ -21,7 +21,7 @@ export function Header({ optionalName, size }: HeaderProps) {
 			name = 'Projects'
 			break
 		case '/resume':
-			name = 'Resume'
+			name = 'Experience Timeline'
 			break
 		default:
 			name = ''
@@ -57,12 +57,12 @@ export function Header({ optionalName, size }: HeaderProps) {
 		)
 	} else {
 		return (
-			<div className="flex">
-				<h1 className="mb-4 ml-8 text-2xl font-black underline decoration-amber-300 decoration-wavy decoration-3 underline-offset-8">
-					{splitter(optionalName ? optionalName : ' ', true)}
+			<div className="flex flex-row gap-1">
+				<h1 className="mb-4 text-lg font-semibold underline decoration-amber-300 decoration-wavy decoration-3 underline-offset-4">
+					{optionalName?.split(' ').shift()}
 				</h1>
-				<h1 className="mb-4 text-2xl font-black">
-					{splitter(optionalName ? optionalName : ' ', false)}
+				<h1 className="mb-4 text-lg font-semibold">
+					{optionalName?.split(' ').slice(1).join(' ')}
 				</h1>
 			</div>
 		)
